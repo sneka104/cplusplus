@@ -1,0 +1,17 @@
+#include<iostream>
+using namespace std;
+int main ()
+{
+    float hrs, min, sec;
+    cout << "Enter time : \n";
+    cout << "Hours: ";
+    cin >> hrs;
+    cout<<"Minutes:";
+    cin>>min;
+    cout<<"Seconds:";
+    cin>>sec;
+    cout << "The time is= "<<  hrs << " : " << min << " : " << sec;
+    sec = sec + (min * 60) + (hrs*3600);
+    cout<<"\nTime in seconds: "<<sec;
+    return 0;
+}
